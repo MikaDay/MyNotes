@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notify</title>
+
+    <STYLE>
+        body, html {
+          padding: 0px;
+          margin: 0px;
+        }
+        .mainDiv{
+          background-color: #ebffff;
+          width: 100%;
+          height: calc(100% - 70px);
+          font-family: onefont;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+        @font-face {
+          font-family: onefont;
+          src: url(font.ttf);
+        }
+
+        h1 {
+         font-family: 'onefont', Arial, sans-serif;
+         font-weight:normal;
+         font-style:normal;
+         }
+
+         header{
+           background-color: cyan;
+           width: 100%;
+           height: 70px;
+         }
+
+         header h1 {
+           padding-top: 15px;
+         }
+
+         .textInput{
+           padding: 10px;
+           width:100%;
+         }
+
+         .timeInput{
+           padding: 10px;
+           width: 100%;
+           margin-top: 20px;
+         }
+
+         .send{
+           width: 300px;
+           height: 60px;
+           background-color: cyan;
+           color: black;
+           margin-left: 200px;
+           border:none;
+           margin-top: 60px;
+           border-radius: 20px;
+           font-size: 20px;
+         }
+
+         .send:hover{
+           background-color: #1cb0b0;
+           cursor:pointer;
+         }
+    </STYLE>
+  </head>
+  <body>
+     <header>
+         <h1 style="text-align:center;">
+            Notify App
+         </h1>
+     </header>
+     <section>
+       <div class="mainDiv">
+           <input class='textInput' placeholder="Text" type="text" name="text">
+
+           <input id='datePicker' class='timeInput' type="datetime-local" name="time">
+           <input type="submit" class='send' value="Send">
+        
+       </div>
+     </section>
+  </body>
+
+</html>
